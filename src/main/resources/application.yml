@@ -1,0 +1,101 @@
+spring:
+  application:
+    name: flowable_ui_66
+  jackson:
+    time-zone: GMT+8
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/flowable_modeler?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&nullCatalogMeansCurrent=true
+    username: root
+    password: 123456
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 100MB
+
+server:
+  port: 9999
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /
+
+## flowable config
+flowable:
+  common:
+    app:
+      security:
+        type: idm
+      role-prefix:
+      idm-admin:
+        user: admin
+        password: 123456
+  idm:
+    ldap:
+      enabled: false
+    app:
+      admin:
+        user-id: admin
+        password: 123456
+        first-name: donald
+        last-name: duck
+        email: lyllyl0000@126.com
+  content:
+    storage:
+      root-folder: data/
+      create-root: true
+  process:
+    definition-cache-limit: 512
+    async:
+      executor:
+        default-async-job-acquire-wait-time-in-millis: 5000
+        default-timer-job-acquire-wait-time-in-millis: 5000
+  cmmn:
+    async:
+      executor:
+        default-async-job-acquire-wait-time-in-millis: 5000
+        default-timer-job-acquire-wait-time-in-millis: 5000
+  rest:
+    app:
+      authentication-mode: verify-privilege
+  task:
+    app:
+      rest-enabled: true
+  admin:
+    app:
+      security:
+        encryption:
+          credentials-i-v-spec: j8kdO2hejA9lKmm6
+          credentials-secret-spec: 9FGl73ngxcOoJvmL
+  form-field-validation-enabled: false
+  experimental:
+    debugger:
+      enabled: true
+  database-schema-update: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: when_authorized
+      roles: access-admin
+  health:
+    ldap:
+      enabled: false
+
+
+#logging
+logging:
+  file:
+    path: logs
+    name: ${spring.application.name}
+  level:
+    com.lance.flowable: debug
+    org.springframework: info
+    org.flowable.engine.impl.persistence.entity: debug
+    org.flowable.task.service.impl.persistence.entity: debug
