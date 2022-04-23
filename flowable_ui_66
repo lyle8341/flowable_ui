@@ -1,0 +1,825 @@
+2022-04-23 20:12:49.206  INFO 78937 --- [main] com.lyle.flowable.FlowableUiApplication  : Starting FlowableUiApplication on liyulongdeMacBook-Pro.local with PID 78937 (/Users/liyulong/IdeaProjects/flowable_ui/target/classes started by liyulong in /Users/liyulong/IdeaProjects/flowable_ui)
+2022-04-23 20:12:49.209  INFO 78937 --- [main] com.lyle.flowable.FlowableUiApplication  : No active profile set, falling back to default profiles: default
+2022-04-23 20:12:50.928  INFO 78937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7fc7152e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 20:12:50.933  INFO 78937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.flowable.ui.common.properties.FlowableRemoteIdmAutoConfiguration' of type [org.flowable.ui.common.properties.FlowableRemoteIdmAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 20:12:50.954  INFO 78937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'flowable.common.app-org.flowable.ui.common.properties.FlowableCommonAppProperties' of type [org.flowable.ui.common.properties.FlowableCommonAppProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 20:12:50.955  INFO 78937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'grantedAuthorityDefaults' of type [org.springframework.security.config.core.GrantedAuthorityDefaults] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 20:12:50.957  INFO 78937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 20:12:51.196  INFO 78937 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-04-23 20:12:51.208  INFO 78937 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-23 20:12:51.208  INFO 78937 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-04-23 20:12:51.423  INFO 78937 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-23 20:12:51.423  INFO 78937 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1933 ms
+2022-04-23 20:12:51.868  INFO 78937 --- [main] o.f.s.b.ProcessEngineAutoConfiguration   : No deployment resources were found for autodeployment
+2022-04-23 20:12:51.895  INFO 78937 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-23 20:12:52.062  INFO 78937 --- [main] o.f.s.b.c.CmmnEngineAutoConfiguration    : No deployment resources were found for autodeployment
+2022-04-23 20:12:52.185  INFO 78937 --- [main] o.f.s.b.dmn.DmnEngineAutoConfiguration   : No deployment resources were found for autodeployment
+2022-04-23 20:12:52.231  INFO 78937 --- [main] o.f.s.b.f.FormEngineAutoConfiguration    : No deployment resources were found for autodeployment
+2022-04-23 20:12:52.266  INFO 78937 --- [main] o.f.s.b.e.EventRegistryAutoConfiguration : No deployment resources were found for autodeployment
+2022-04-23 20:12:52.346  INFO 78937 --- [main] o.f.s.b.app.AppEngineAutoConfiguration   : No deployment resources were found for autodeployment
+2022-04-23 20:12:52.377  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Found 7 Engine Configurators in total:
+2022-04-23 20:12:52.378  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2022-04-23 20:12:52.378  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2022-04-23 20:12:52.379  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2022-04-23 20:12:52.379  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2022-04-23 20:12:52.379  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2022-04-23 20:12:52.379  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2022-04-23 20:12:52.379  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2022-04-23 20:12:52.379  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2022-04-23 20:12:52.457  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2022-04-23 20:12:52.464  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2022-04-23 20:12:52.469  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2022-04-23 20:12:52.474  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2022-04-23 20:12:52.481  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2022-04-23 20:12:52.486  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2022-04-23 20:12:52.515  INFO 78937 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-23 20:12:52.686  INFO 78937 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-23 20:12:53.542  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2022-04-23 20:12:53.790  INFO 78937 --- [main] o.f.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2022-04-23 20:12:53.836 DEBUG 78937 --- [main] e.D.selectDeploymentCountByQueryCriteria : ==>  Preparing: select count(RES.ID_) from ACT_RE_DEPLOYMENT RES WHERE RES.ENGINE_VERSION_ = ?
+2022-04-23 20:12:53.842 DEBUG 78937 --- [main] e.D.selectDeploymentCountByQueryCriteria : ==> Parameters: v5(String)
+2022-04-23 20:12:53.854 DEBUG 78937 --- [main] e.D.selectDeploymentCountByQueryCriteria : <==      Total: 1
+2022-04-23 20:12:53.855  INFO 78937 --- [main] o.f.e.impl.cmd.ValidateV5EntitiesCmd     : Total of v5 deployments found: 0
+2022-04-23 20:12:53.861  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2022-04-23 20:12:54.796  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.FLW_EV_DATABASECHANGELOGLOCK
+2022-04-23 20:12:54.798  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.FLW_EV_DATABASECHANGELOGLOCK
+2022-04-23 20:12:54.800  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.FLW_EV_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 20:12:54.824  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 20:12:56.314  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.FLW_EV_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 20:12:56.315  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.FLW_EV_DATABASECHANGELOG
+2022-04-23 20:12:56.315  INFO 78937 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.FLW_EV_DATABASECHANGELOG
+2022-04-23 20:12:56.316  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.FLW_EV_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 20:12:56.330  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 20:12:56.331  INFO 78937 --- [main] o.f.e.impl.EventRegistryEngineImpl       : EventRegistryEngine default created
+2022-04-23 20:12:56.331  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2022-04-23 20:12:56.343  INFO 78937 --- [main] o.f.idm.engine.impl.IdmEngineImpl        : IdmEngine default created
+2022-04-23 20:12:56.343  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2022-04-23 20:12:56.371  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DMN_DATABASECHANGELOGLOCK
+2022-04-23 20:12:56.371  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DMN_DATABASECHANGELOGLOCK
+2022-04-23 20:12:56.372  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 20:12:56.373  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 20:12:56.403  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 20:12:56.404  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DMN_DATABASECHANGELOG
+2022-04-23 20:12:56.404  INFO 78937 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_DMN_DATABASECHANGELOG
+2022-04-23 20:12:56.404  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 20:12:56.415  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 20:12:56.415  INFO 78937 --- [main] o.f.dmn.engine.impl.DmnEngineImpl        : DmnEngine default created
+2022-04-23 20:12:56.416  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2022-04-23 20:12:56.432  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_FO_DATABASECHANGELOGLOCK
+2022-04-23 20:12:56.433  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_FO_DATABASECHANGELOGLOCK
+2022-04-23 20:12:56.434  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 20:12:56.435  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 20:12:56.460  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_FO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 20:12:56.461  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_FO_DATABASECHANGELOG
+2022-04-23 20:12:56.461  INFO 78937 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_FO_DATABASECHANGELOG
+2022-04-23 20:12:56.461  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 20:12:56.466  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 20:12:56.467  INFO 78937 --- [main] o.f.form.engine.impl.FormEngineImpl      : FormEngine default created
+2022-04-23 20:12:56.467  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2022-04-23 20:12:56.469  INFO 78937 --- [main] o.f.c.s.SpringContentEngineConfiguration : Content file system root : /Users/liyulong/IdeaProjects/flowable_ui/data
+2022-04-23 20:12:56.480  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CO_DATABASECHANGELOGLOCK
+2022-04-23 20:12:56.481  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CO_DATABASECHANGELOGLOCK
+2022-04-23 20:12:56.481  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 20:12:56.482  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 20:12:56.505  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 20:12:56.506  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CO_DATABASECHANGELOG
+2022-04-23 20:12:56.506  INFO 78937 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_CO_DATABASECHANGELOG
+2022-04-23 20:12:56.506  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 20:12:56.511  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 20:12:56.511  INFO 78937 --- [main] o.f.c.engine.impl.ContentEngineImpl      : ContentEngine default created
+2022-04-23 20:12:56.512  INFO 78937 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2022-04-23 20:12:56.608  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOGLOCK
+2022-04-23 20:12:56.610  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOGLOCK
+2022-04-23 20:12:56.611  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 20:12:56.614  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 20:12:56.675  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 20:12:56.677  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOG
+2022-04-23 20:12:56.677  INFO 78937 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_CMMN_DATABASECHANGELOG
+2022-04-23 20:12:56.677  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 20:12:56.711  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 20:12:56.711  INFO 78937 --- [main] o.f.cmmn.engine.impl.CmmnEngineImpl      : CmmnEngine default created
+2022-04-23 20:12:56.731  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_APP_DATABASECHANGELOGLOCK
+2022-04-23 20:12:56.731  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_APP_DATABASECHANGELOGLOCK
+2022-04-23 20:12:56.732  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_APP_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 20:12:56.733  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 20:12:56.761  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_APP_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 20:12:56.762  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_APP_DATABASECHANGELOG
+2022-04-23 20:12:56.762  INFO 78937 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_APP_DATABASECHANGELOG
+2022-04-23 20:12:56.762  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_APP_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 20:12:56.767  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 20:12:56.768  INFO 78937 --- [main] o.f.app.engine.impl.AppEngineImpl        : AppEngine default created
+2022-04-23 20:12:57.003  INFO 78937 --- [main] o.f.u.m.c.ModelerDatabaseConfiguration   : database product name: 'MySQL'
+2022-04-23 20:12:57.003  INFO 78937 --- [main] o.f.u.m.c.ModelerDatabaseConfiguration   : using database type: mysql
+2022-04-23 20:12:57.421  INFO 78937 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-04-23 20:12:57.487  INFO 78937 --- [main] o.s.l.c.support.AbstractContextSource    : Property 'userDn' not set - anonymous context will be used for read-write operations
+2022-04-23 20:12:57.549  INFO 78937 --- [main] u.c.s.CustomPersistentRememberMeServices : Cookie max-age set to 2678400 seconds
+2022-04-23 20:12:57.549  INFO 78937 --- [main] u.c.s.CustomPersistentRememberMeServices : Cookie refresh age set to 86400 seconds
+2022-04-23 20:12:57.604  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_ADM_DATABASECHANGELOGLOCK
+2022-04-23 20:12:57.605  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_ADM_DATABASECHANGELOGLOCK
+2022-04-23 20:12:57.605  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_ADM_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 20:12:57.607  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 20:12:57.631  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_ADM_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 20:12:57.632  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_ADM_DATABASECHANGELOG
+2022-04-23 20:12:57.633  INFO 78937 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_ADM_DATABASECHANGELOG
+2022-04-23 20:12:57.633  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_ADM_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 20:12:57.635  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 20:12:57.803  INFO 78937 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/idm/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b4727e4, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e41c74d, org.springframework.security.web.header.HeaderWriterFilter@6ab4517f, org.springframework.security.web.authentication.logout.LogoutFilter@138f597, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30cd72a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@280b9922, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@670d2bbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14170abd, org.springframework.security.web.session.SessionManagementFilter@46a94faf, org.springframework.security.web.access.ExceptionTranslationFilter@31fd8e6f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@207475a2]
+2022-04-23 20:12:57.805  INFO 78937 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*-api/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72da5f0e, org.springframework.security.web.context.SecurityContextPersistenceFilter@4430d9be, org.springframework.security.web.header.HeaderWriterFilter@7aaec50e, org.springframework.security.web.authentication.logout.LogoutFilter@456a0e9e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7531ba53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73e6d475, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f6cf9b2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f0170e, org.springframework.security.web.session.SessionManagementFilter@27ebe541, org.springframework.security.web.access.ExceptionTranslationFilter@16043cb9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24f3d208]
+2022-04-23 20:12:57.806  INFO 78937 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/editor/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dc6c5ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@75dc1d5a, org.springframework.security.web.header.HeaderWriterFilter@17765082, org.springframework.security.web.authentication.logout.LogoutFilter@68a4129d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58842f55, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1946d235, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c9163df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e620fe7, org.springframework.security.web.session.SessionManagementFilter@17fac5b2, org.springframework.security.web.access.ExceptionTranslationFilter@25892fe3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7aece85c]
+2022-04-23 20:12:57.808  INFO 78937 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.flowable.ui.common.security.ActuatorRequestMatcher@13cdfd26, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78168463, org.springframework.security.web.context.SecurityContextPersistenceFilter@73b8c79b, org.springframework.security.web.header.HeaderWriterFilter@1a8d4a3c, org.springframework.security.web.authentication.logout.LogoutFilter@29701f1f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3d5a6aca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c3b3f04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c174215, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@619d0977, org.springframework.security.web.session.SessionManagementFilter@dd7b622, org.springframework.security.web.access.ExceptionTranslationFilter@61f9cab2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8922006]
+2022-04-23 20:12:57.818  INFO 78937 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51b22f06, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ff02deb, org.springframework.security.web.header.HeaderWriterFilter@3cc0efa2, org.springframework.security.web.authentication.logout.LogoutFilter@46b4cddb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2aaa5122, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@156290d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ee4c028, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@4fbc04de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29e94753, org.springframework.security.web.session.SessionManagementFilter@52148669, org.springframework.security.web.access.ExceptionTranslationFilter@28d61fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3be3ba84]
+2022-04-23 20:12:57.823  INFO 78937 --- [main] o.f.u.m.c.ModelerDatabaseConfiguration   : Configuring Liquibase
+2022-04-23 20:12:57.832  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DE_DATABASECHANGELOGLOCK
+2022-04-23 20:12:57.833  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DE_DATABASECHANGELOGLOCK
+2022-04-23 20:12:57.833  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_DE_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 20:12:57.834  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 20:12:57.867  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_DE_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 20:12:57.867  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DE_DATABASECHANGELOG
+2022-04-23 20:12:57.867  INFO 78937 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_DE_DATABASECHANGELOG
+2022-04-23 20:12:57.867  INFO 78937 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_DE_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 20:12:57.875  INFO 78937 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 20:12:58.342  INFO 78937 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-04-23 20:12:58.355  INFO 78937 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-04-23 20:12:58.427  INFO 78937 --- [main] o.f.j.s.i.a.AbstractAsyncExecutor        : Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 20:12:58.427  INFO 78937 --- [Thread-20] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : starting to acquire async jobs due
+2022-04-23 20:12:58.433  INFO 78937 --- [Thread-22] o.f.j.s.i.a.ResetExpiredJobsRunnable     : starting to reset expired jobs for engine cmmn
+2022-04-23 20:12:58.433  INFO 78937 --- [Thread-21] o.f.j.s.i.a.AcquireTimerJobsRunnable     : starting to acquire async jobs due
+2022-04-23 20:12:58.433  INFO 78937 --- [main] o.f.j.s.i.a.AbstractAsyncExecutor        : Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 20:12:58.434  INFO 78937 --- [Thread-23] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : starting to acquire async jobs due
+2022-04-23 20:12:58.437  INFO 78937 --- [Thread-24] o.f.j.s.i.a.AcquireTimerJobsRunnable     : starting to acquire async jobs due
+2022-04-23 20:12:58.437  INFO 78937 --- [Thread-25] o.f.j.s.i.a.ResetExpiredJobsRunnable     : starting to reset expired jobs for engine bpmn
+2022-04-23 20:12:58.457  INFO 78937 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable IDM App Servlet'
+2022-04-23 20:12:58.457  INFO 78937 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable IDM App Servlet'
+2022-04-23 20:12:58.527  INFO 78937 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 70 ms
+2022-04-23 20:12:58.528  INFO 78937 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Admin App'
+2022-04-23 20:12:58.528  INFO 78937 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Admin App'
+2022-04-23 20:12:58.739  INFO 78937 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 211 ms
+2022-04-23 20:12:58.739  INFO 78937 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Modeler App Servlet'
+2022-04-23 20:12:58.739  INFO 78937 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Modeler App Servlet'
+2022-04-23 20:12:58.837  INFO 78937 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 98 ms
+2022-04-23 20:12:58.837  INFO 78937 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Modeler App API Servlet'
+2022-04-23 20:12:58.837  INFO 78937 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Modeler App API Servlet'
+2022-04-23 20:12:58.878  INFO 78937 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 41 ms
+2022-04-23 20:12:58.878  INFO 78937 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable IDM App API Servlet'
+2022-04-23 20:12:58.878  INFO 78937 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable IDM App API Servlet'
+2022-04-23 20:12:58.916  INFO 78937 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 38 ms
+2022-04-23 20:12:58.919  INFO 78937 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-04-23 20:12:58.969 DEBUG 78937 --- [main] i.p.e.D.selectDeploymentsByQueryCriteria : ==>  Preparing: select RES.* from ACT_RE_DEPLOYMENT RES order by RES.DEPLOY_TIME_ asc
+2022-04-23 20:12:58.969 DEBUG 78937 --- [main] i.p.e.D.selectDeploymentsByQueryCriteria : ==> Parameters: 
+2022-04-23 20:12:58.970 DEBUG 78937 --- [main] i.p.e.D.selectDeploymentsByQueryCriteria : <==      Total: 0
+2022-04-23 20:12:58.971  INFO 78937 --- [main] o.f.ui.task.conf.TaskBootstrapper        : Migrated 0 app deployments
+2022-04-23 20:12:58.972  INFO 78937 --- [main] o.f.u.a.d.g.MinimalDataGenerator         : Verifying if minimal data is present
+2022-04-23 20:12:58.982  INFO 78937 --- [main] com.lyle.flowable.FlowableUiApplication  : Started FlowableUiApplication in 10.283 seconds (JVM running for 11.012)
+2022-04-23 20:12:59.283  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-23 20:12:59.283  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-23 20:12:59.294  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2022-04-23 20:12:59.304  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Form Rest API'
+2022-04-23 20:12:59.304  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Form Rest API'
+2022-04-23 20:12:59.355  INFO 78937 --- [RMI TCP Connection(3)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Using Persistence Adapter: MemoryPersistenceAdapter
+2022-04-23 20:12:59.355  INFO 78937 --- [JMX connector] o.a.a.broker.jmx.ManagementContext       : JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2022-04-23 20:12:59.421  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 116 ms
+2022-04-23 20:12:59.422  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Event Registry Rest API'
+2022-04-23 20:12:59.422  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Event Registry Rest API'
+2022-04-23 20:12:59.488  INFO 78937 --- [RMI TCP Connection(3)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMacBook-Pro.local-54684-1650715979362-0:1) is starting
+2022-04-23 20:12:59.493  INFO 78937 --- [RMI TCP Connection(3)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMacBook-Pro.local-54684-1650715979362-0:1) started
+2022-04-23 20:12:59.493  INFO 78937 --- [RMI TCP Connection(3)-127.0.0.1] o.apache.activemq.broker.BrokerService   : For help or more information please see: http://activemq.apache.org
+2022-04-23 20:12:59.517  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 95 ms
+2022-04-23 20:12:59.520  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable DMN Rest API'
+2022-04-23 20:12:59.520  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable DMN Rest API'
+2022-04-23 20:12:59.570  INFO 78937 --- [RMI TCP Connection(3)-127.0.0.1] o.a.activemq.broker.TransportConnector   : Connector vm://localhost started
+2022-04-23 20:12:59.695  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 175 ms
+2022-04-23 20:12:59.696  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Content Rest API'
+2022-04-23 20:12:59.697  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Content Rest API'
+2022-04-23 20:12:59.861  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 164 ms
+2022-04-23 20:12:59.862  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable CMMN Rest API'
+2022-04-23 20:12:59.862  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable CMMN Rest API'
+2022-04-23 20:13:00.130  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 268 ms
+2022-04-23 20:13:00.132  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable App Rest API'
+2022-04-23 20:13:00.132  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable App Rest API'
+2022-04-23 20:13:00.191  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 59 ms
+2022-04-23 20:13:00.192  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable BPMN Rest API'
+2022-04-23 20:13:00.192  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable BPMN Rest API'
+2022-04-23 20:13:00.466  INFO 78937 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 274 ms
+2022-04-23 21:15:29.516  INFO 78937 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMacBook-Pro.local-54684-1650715979362-0:1) is shutting down
+2022-04-23 21:15:29.526  INFO 78937 --- [ActiveMQ ShutdownHook] o.a.activemq.broker.TransportConnector   : Connector vm://localhost stopped
+2022-04-23 21:15:29.527  INFO 78937 --- [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory         : Encountered a JMSException - resetting the underlying JMS Connection
+
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1194) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1160) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_301]
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+
+2022-04-23 21:15:29.533  WARN 78937 --- [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory         : Could not close shared JMS Connection
+
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:501) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:389) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:205) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:367) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:721) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967) [activemq-client-5.15.14.jar:5.15.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_301]
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1194) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1160) ~[activemq-broker-5.15.14.jar:5.15.14]
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+
+2022-04-23 21:15:29.540  INFO 78937 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMacBook-Pro.local-54684-1650715979362-0:1) uptime 1 hour 2 minutes
+2022-04-23 21:15:29.541  INFO 78937 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMacBook-Pro.local-54684-1650715979362-0:1) is shutdown
+2022-04-23 21:15:29.547  INFO 78937 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-04-23 21:15:29.550  WARN 78937 --- [SpringContextShutdownHook] liquibase.database.core.MySQLDatabase    : Failed to restore the auto commit to true
+2022-04-23 21:15:29.551  WARN 78937 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'close' on bean with name 'modelerLiquibase' threw an exception: liquibase.exception.DatabaseException: java.sql.SQLException: Connection is closed
+2022-04-23 21:15:29.551  WARN 78937 --- [SpringContextShutdownHook] liquibase.database.core.MySQLDatabase    : Failed to restore the auto commit to true
+2022-04-23 21:15:29.551  WARN 78937 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'close' on bean with name 'adminLiquibase' threw an exception: liquibase.exception.DatabaseException: java.sql.SQLException: Connection is closed
+2022-04-23 21:15:29.552  INFO 78937 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-04-23 21:15:29.557  INFO 78937 --- [SpringContextShutdownHook] o.f.j.s.i.a.AbstractAsyncExecutor        : Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 21:15:29.557  INFO 78937 --- [flowable-cmmn-acquire-timer-jobs] o.f.j.s.i.a.AcquireTimerJobsRunnable     : stopped async job due acquisition
+2022-04-23 21:15:29.557  INFO 78937 --- [flowable-cmmn-reset-expired-jobs] o.f.j.s.i.a.ResetExpiredJobsRunnable     : stopped resetting expired jobs for engine cmmn
+2022-04-23 21:15:29.558  INFO 78937 --- [flowable-cmmn-acquire-async-jobs] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : stopped async job due acquisition for engine cmmn
+2022-04-23 21:15:29.565  INFO 78937 --- [SpringContextShutdownHook] o.f.j.s.i.a.AbstractAsyncExecutor        : Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 21:15:29.565  INFO 78937 --- [flowable-bpmn-acquire-timer-jobs] o.f.j.s.i.a.AcquireTimerJobsRunnable     : stopped async job due acquisition
+2022-04-23 21:15:29.565  INFO 78937 --- [flowable-bpmn-reset-expired-jobs] o.f.j.s.i.a.ResetExpiredJobsRunnable     : stopped resetting expired jobs for engine bpmn
+2022-04-23 21:15:29.565  INFO 78937 --- [flowable-bpmn-acquire-async-jobs] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : stopped async job due acquisition for engine bpmn
+2022-04-23 21:15:29.569 DEBUG 78937 --- [SpringContextShutdownHook] i.p.e.E.clearAllProcessInstanceLockTimes : ==>  Preparing: update ACT_RU_EXECUTION set LOCK_TIME_ = null, LOCK_OWNER_ = null where LOCK_OWNER_ = ?
+2022-04-23 21:15:29.569 DEBUG 78937 --- [SpringContextShutdownHook] i.p.e.E.clearAllProcessInstanceLockTimes : ==> Parameters: ce5ac724-6d45-45c7-8d5c-bcd61b38095b(String)
+2022-04-23 21:15:29.571 DEBUG 78937 --- [SpringContextShutdownHook] i.p.e.E.clearAllProcessInstanceLockTimes : <==    Updates: 0
+2022-04-23 21:15:29.577  INFO 78937 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-23 21:15:29.579  INFO 78937 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-23 21:15:29.585  INFO 78937 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-23 21:15:55.100  INFO 80480 --- [main] com.lyle.flowable.FlowableUiApplication  : Starting FlowableUiApplication on liyulongdeMBP.lan with PID 80480 (/Users/liyulong/IdeaProjects/flowable_ui/target/classes started by liyulong in /Users/liyulong/IdeaProjects/flowable_ui)
+2022-04-23 21:15:55.104  INFO 80480 --- [main] com.lyle.flowable.FlowableUiApplication  : No active profile set, falling back to default profiles: default
+2022-04-23 21:15:56.642  INFO 80480 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6734ff92' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 21:15:56.646  INFO 80480 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.flowable.ui.common.properties.FlowableRemoteIdmAutoConfiguration' of type [org.flowable.ui.common.properties.FlowableRemoteIdmAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 21:15:56.670  INFO 80480 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'flowable.common.app-org.flowable.ui.common.properties.FlowableCommonAppProperties' of type [org.flowable.ui.common.properties.FlowableCommonAppProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 21:15:56.671  INFO 80480 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'grantedAuthorityDefaults' of type [org.springframework.security.config.core.GrantedAuthorityDefaults] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 21:15:56.673  INFO 80480 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 21:15:56.897  INFO 80480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-04-23 21:15:56.906  INFO 80480 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-23 21:15:56.906  INFO 80480 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-04-23 21:15:57.173  INFO 80480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-23 21:15:57.174  INFO 80480 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1803 ms
+2022-04-23 21:15:57.665  INFO 80480 --- [main] o.f.s.b.ProcessEngineAutoConfiguration   : No deployment resources were found for autodeployment
+2022-04-23 21:15:57.699  INFO 80480 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-23 21:15:57.910  INFO 80480 --- [main] o.f.s.b.c.CmmnEngineAutoConfiguration    : No deployment resources were found for autodeployment
+2022-04-23 21:15:58.033  INFO 80480 --- [main] o.f.s.b.dmn.DmnEngineAutoConfiguration   : No deployment resources were found for autodeployment
+2022-04-23 21:15:58.078  INFO 80480 --- [main] o.f.s.b.f.FormEngineAutoConfiguration    : No deployment resources were found for autodeployment
+2022-04-23 21:15:58.118  INFO 80480 --- [main] o.f.s.b.e.EventRegistryAutoConfiguration : No deployment resources were found for autodeployment
+2022-04-23 21:15:58.221  INFO 80480 --- [main] o.f.s.b.app.AppEngineAutoConfiguration   : No deployment resources were found for autodeployment
+2022-04-23 21:15:58.256  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Found 7 Engine Configurators in total:
+2022-04-23 21:15:58.257  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2022-04-23 21:15:58.258  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2022-04-23 21:15:58.258  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2022-04-23 21:15:58.258  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2022-04-23 21:15:58.258  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2022-04-23 21:15:58.258  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2022-04-23 21:15:58.258  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2022-04-23 21:15:58.258  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2022-04-23 21:15:58.319  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2022-04-23 21:15:58.323  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2022-04-23 21:15:58.327  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2022-04-23 21:15:58.330  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2022-04-23 21:15:58.333  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2022-04-23 21:15:58.336  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2022-04-23 21:15:58.352  INFO 80480 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-23 21:15:58.523  INFO 80480 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-23 21:15:59.490  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2022-04-23 21:15:59.731  INFO 80480 --- [main] o.f.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2022-04-23 21:15:59.782 DEBUG 80480 --- [main] e.D.selectDeploymentCountByQueryCriteria : ==>  Preparing: select count(RES.ID_) from ACT_RE_DEPLOYMENT RES WHERE RES.ENGINE_VERSION_ = ?
+2022-04-23 21:15:59.790 DEBUG 80480 --- [main] e.D.selectDeploymentCountByQueryCriteria : ==> Parameters: v5(String)
+2022-04-23 21:15:59.799 DEBUG 80480 --- [main] e.D.selectDeploymentCountByQueryCriteria : <==      Total: 1
+2022-04-23 21:15:59.800  INFO 80480 --- [main] o.f.e.impl.cmd.ValidateV5EntitiesCmd     : Total of v5 deployments found: 0
+2022-04-23 21:15:59.807  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2022-04-23 21:16:00.671  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.FLW_EV_DATABASECHANGELOGLOCK
+2022-04-23 21:16:00.673  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.FLW_EV_DATABASECHANGELOGLOCK
+2022-04-23 21:16:00.674  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.FLW_EV_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:16:00.683  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:16:02.439  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.FLW_EV_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:16:02.440  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.FLW_EV_DATABASECHANGELOG
+2022-04-23 21:16:02.440  INFO 80480 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.FLW_EV_DATABASECHANGELOG
+2022-04-23 21:16:02.440  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.FLW_EV_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:16:02.455  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:16:02.456  INFO 80480 --- [main] o.f.e.impl.EventRegistryEngineImpl       : EventRegistryEngine default created
+2022-04-23 21:16:02.457  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2022-04-23 21:16:02.469  INFO 80480 --- [main] o.f.idm.engine.impl.IdmEngineImpl        : IdmEngine default created
+2022-04-23 21:16:02.470  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2022-04-23 21:16:02.501  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DMN_DATABASECHANGELOGLOCK
+2022-04-23 21:16:02.502  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DMN_DATABASECHANGELOGLOCK
+2022-04-23 21:16:02.502  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:16:02.504  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:16:02.541  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:16:02.541  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DMN_DATABASECHANGELOG
+2022-04-23 21:16:02.542  INFO 80480 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_DMN_DATABASECHANGELOG
+2022-04-23 21:16:02.542  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:16:02.554  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:16:02.555  INFO 80480 --- [main] o.f.dmn.engine.impl.DmnEngineImpl        : DmnEngine default created
+2022-04-23 21:16:02.555  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2022-04-23 21:16:02.575  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_FO_DATABASECHANGELOGLOCK
+2022-04-23 21:16:02.575  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_FO_DATABASECHANGELOGLOCK
+2022-04-23 21:16:02.576  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:16:02.577  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:16:02.608  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_FO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:16:02.609  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_FO_DATABASECHANGELOG
+2022-04-23 21:16:02.609  INFO 80480 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_FO_DATABASECHANGELOG
+2022-04-23 21:16:02.609  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:16:02.616  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:16:02.616  INFO 80480 --- [main] o.f.form.engine.impl.FormEngineImpl      : FormEngine default created
+2022-04-23 21:16:02.617  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2022-04-23 21:16:02.620  INFO 80480 --- [main] o.f.c.s.SpringContentEngineConfiguration : Content file system root : /Users/liyulong/IdeaProjects/flowable_ui/data
+2022-04-23 21:16:02.635  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CO_DATABASECHANGELOGLOCK
+2022-04-23 21:16:02.636  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CO_DATABASECHANGELOGLOCK
+2022-04-23 21:16:02.636  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:16:02.638  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:16:02.666  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:16:02.667  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CO_DATABASECHANGELOG
+2022-04-23 21:16:02.667  INFO 80480 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_CO_DATABASECHANGELOG
+2022-04-23 21:16:02.667  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:16:02.672  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:16:02.673  INFO 80480 --- [main] o.f.c.engine.impl.ContentEngineImpl      : ContentEngine default created
+2022-04-23 21:16:02.674  INFO 80480 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2022-04-23 21:16:02.769  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOGLOCK
+2022-04-23 21:16:02.770  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOGLOCK
+2022-04-23 21:16:02.770  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:16:02.772  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:16:02.829  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:16:02.830  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOG
+2022-04-23 21:16:02.830  INFO 80480 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_CMMN_DATABASECHANGELOG
+2022-04-23 21:16:02.830  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:16:02.880  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:16:02.880  INFO 80480 --- [main] o.f.cmmn.engine.impl.CmmnEngineImpl      : CmmnEngine default created
+2022-04-23 21:16:02.902  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_APP_DATABASECHANGELOGLOCK
+2022-04-23 21:16:02.903  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_APP_DATABASECHANGELOGLOCK
+2022-04-23 21:16:02.904  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_APP_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:16:02.905  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:16:02.940  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_APP_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:16:02.940  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_APP_DATABASECHANGELOG
+2022-04-23 21:16:02.941  INFO 80480 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_APP_DATABASECHANGELOG
+2022-04-23 21:16:02.941  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_APP_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:16:02.947  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:16:02.948  INFO 80480 --- [main] o.f.app.engine.impl.AppEngineImpl        : AppEngine default created
+2022-04-23 21:16:03.149  INFO 80480 --- [main] o.f.u.m.c.ModelerDatabaseConfiguration   : database product name: 'MySQL'
+2022-04-23 21:16:03.149  INFO 80480 --- [main] o.f.u.m.c.ModelerDatabaseConfiguration   : using database type: mysql
+2022-04-23 21:16:03.652  INFO 80480 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-04-23 21:16:03.736  INFO 80480 --- [main] o.s.l.c.support.AbstractContextSource    : Property 'userDn' not set - anonymous context will be used for read-write operations
+2022-04-23 21:16:03.790  INFO 80480 --- [main] u.c.s.CustomPersistentRememberMeServices : Cookie max-age set to 2678400 seconds
+2022-04-23 21:16:03.790  INFO 80480 --- [main] u.c.s.CustomPersistentRememberMeServices : Cookie refresh age set to 86400 seconds
+2022-04-23 21:16:03.848  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_ADM_DATABASECHANGELOGLOCK
+2022-04-23 21:16:03.849  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_ADM_DATABASECHANGELOGLOCK
+2022-04-23 21:16:03.849  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_ADM_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:16:03.851  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:16:03.875  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_ADM_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:16:03.876  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_ADM_DATABASECHANGELOG
+2022-04-23 21:16:03.876  INFO 80480 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_ADM_DATABASECHANGELOG
+2022-04-23 21:16:03.876  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_ADM_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:16:03.879  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:16:04.052  INFO 80480 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/idm/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67d361fa, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ab4517f, org.springframework.security.web.header.HeaderWriterFilter@6d1953e4, org.springframework.security.web.authentication.logout.LogoutFilter@6333ac03, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4631a6a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46a94faf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6385b96c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c5077f6, org.springframework.security.web.session.SessionManagementFilter@31fd8e6f, org.springframework.security.web.access.ExceptionTranslationFilter@7f210da5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f5fd883]
+2022-04-23 21:16:04.054  INFO 80480 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*-api/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18d3e7fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@23b81002, org.springframework.security.web.header.HeaderWriterFilter@fac6d4a, org.springframework.security.web.authentication.logout.LogoutFilter@4430d9be, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@ea2f3a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16043cb9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7aaec50e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31782447, org.springframework.security.web.session.SessionManagementFilter@57e15f2d, org.springframework.security.web.access.ExceptionTranslationFilter@23c2c96d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@456a0e9e]
+2022-04-23 21:16:04.057  INFO 80480 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/editor/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7064ae69, org.springframework.security.web.context.SecurityContextPersistenceFilter@44f4c619, org.springframework.security.web.header.HeaderWriterFilter@627a06e6, org.springframework.security.web.authentication.logout.LogoutFilter@75dc1d5a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@475ca2c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25892fe3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17765082, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32142479, org.springframework.security.web.session.SessionManagementFilter@1592a3d5, org.springframework.security.web.access.ExceptionTranslationFilter@60b03599, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68a4129d]
+2022-04-23 21:16:04.061  INFO 80480 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.flowable.ui.common.security.ActuatorRequestMatcher@38f2c97e, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@302b6367, org.springframework.security.web.context.SecurityContextPersistenceFilter@d9e61f2, org.springframework.security.web.header.HeaderWriterFilter@4f168322, org.springframework.security.web.authentication.logout.LogoutFilter@73b8c79b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@46ce6678, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61f9cab2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a8d4a3c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8922006, org.springframework.security.web.session.SessionManagementFilter@411acaed, org.springframework.security.web.access.ExceptionTranslationFilter@4105b1d2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a2454b0]
+2022-04-23 21:16:04.076  INFO 80480 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3be3ba84, org.springframework.security.web.context.SecurityContextPersistenceFilter@17eb5858, org.springframework.security.web.header.HeaderWriterFilter@28d61fc, org.springframework.security.web.authentication.logout.LogoutFilter@1ff02deb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f7bc46e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55abf66a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3cc0efa2, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2ee4c028, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2aaa5122, org.springframework.security.web.session.SessionManagementFilter@3d5a6c07, org.springframework.security.web.access.ExceptionTranslationFilter@10ab3bc0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60c5c115]
+2022-04-23 21:16:04.086  INFO 80480 --- [main] o.f.u.m.c.ModelerDatabaseConfiguration   : Configuring Liquibase
+2022-04-23 21:16:04.099  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DE_DATABASECHANGELOGLOCK
+2022-04-23 21:16:04.100  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DE_DATABASECHANGELOGLOCK
+2022-04-23 21:16:04.100  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_DE_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:16:04.102  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:16:04.134  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_DE_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:16:04.135  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DE_DATABASECHANGELOG
+2022-04-23 21:16:04.135  INFO 80480 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_DE_DATABASECHANGELOG
+2022-04-23 21:16:04.135  INFO 80480 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_DE_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:16:04.140  INFO 80480 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:16:04.496  INFO 80480 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-04-23 21:16:04.510  INFO 80480 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-04-23 21:16:04.597  INFO 80480 --- [main] o.f.j.s.i.a.AbstractAsyncExecutor        : Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 21:16:04.598  INFO 80480 --- [Thread-20] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : starting to acquire async jobs due
+2022-04-23 21:16:04.604  INFO 80480 --- [Thread-21] o.f.j.s.i.a.AcquireTimerJobsRunnable     : starting to acquire async jobs due
+2022-04-23 21:16:04.604  INFO 80480 --- [Thread-22] o.f.j.s.i.a.ResetExpiredJobsRunnable     : starting to reset expired jobs for engine cmmn
+2022-04-23 21:16:04.605  INFO 80480 --- [main] o.f.j.s.i.a.AbstractAsyncExecutor        : Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 21:16:04.605  INFO 80480 --- [Thread-23] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : starting to acquire async jobs due
+2022-04-23 21:16:04.609  INFO 80480 --- [Thread-25] o.f.j.s.i.a.AcquireTimerJobsRunnable     : starting to acquire async jobs due
+2022-04-23 21:16:04.609  INFO 80480 --- [Thread-26] o.f.j.s.i.a.ResetExpiredJobsRunnable     : starting to reset expired jobs for engine bpmn
+2022-04-23 21:16:04.633  INFO 80480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable IDM App Servlet'
+2022-04-23 21:16:04.633  INFO 80480 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable IDM App Servlet'
+2022-04-23 21:16:04.720  INFO 80480 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 87 ms
+2022-04-23 21:16:04.720  INFO 80480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Admin App'
+2022-04-23 21:16:04.720  INFO 80480 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Admin App'
+2022-04-23 21:16:04.921  INFO 80480 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 201 ms
+2022-04-23 21:16:04.921  INFO 80480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Modeler App Servlet'
+2022-04-23 21:16:04.921  INFO 80480 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Modeler App Servlet'
+2022-04-23 21:16:05.059  INFO 80480 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 138 ms
+2022-04-23 21:16:05.059  INFO 80480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Modeler App API Servlet'
+2022-04-23 21:16:05.059  INFO 80480 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Modeler App API Servlet'
+2022-04-23 21:16:05.105  INFO 80480 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 46 ms
+2022-04-23 21:16:05.106  INFO 80480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable IDM App API Servlet'
+2022-04-23 21:16:05.106  INFO 80480 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable IDM App API Servlet'
+2022-04-23 21:16:05.149  INFO 80480 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 43 ms
+2022-04-23 21:16:05.153  INFO 80480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-04-23 21:16:05.193 DEBUG 80480 --- [main] i.p.e.D.selectDeploymentsByQueryCriteria : ==>  Preparing: select RES.* from ACT_RE_DEPLOYMENT RES order by RES.DEPLOY_TIME_ asc
+2022-04-23 21:16:05.193 DEBUG 80480 --- [main] i.p.e.D.selectDeploymentsByQueryCriteria : ==> Parameters: 
+2022-04-23 21:16:05.194 DEBUG 80480 --- [main] i.p.e.D.selectDeploymentsByQueryCriteria : <==      Total: 0
+2022-04-23 21:16:05.194  INFO 80480 --- [main] o.f.ui.task.conf.TaskBootstrapper        : Migrated 0 app deployments
+2022-04-23 21:16:05.195  INFO 80480 --- [main] o.f.u.a.d.g.MinimalDataGenerator         : Verifying if minimal data is present
+2022-04-23 21:16:05.201  INFO 80480 --- [main] com.lyle.flowable.FlowableUiApplication  : Started FlowableUiApplication in 10.678 seconds (JVM running for 11.437)
+2022-04-23 21:16:05.692  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-23 21:16:05.692  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-23 21:16:05.704  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2022-04-23 21:16:05.716  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Form Rest API'
+2022-04-23 21:16:05.716  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Form Rest API'
+2022-04-23 21:16:05.833  INFO 80480 --- [RMI TCP Connection(4)-192.168.31.248] o.apache.activemq.broker.BrokerService   : Using Persistence Adapter: MemoryPersistenceAdapter
+2022-04-23 21:16:05.839  INFO 80480 --- [JMX connector] o.a.a.broker.jmx.ManagementContext       : JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2022-04-23 21:16:05.912  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 196 ms
+2022-04-23 21:16:05.913  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Event Registry Rest API'
+2022-04-23 21:16:05.914  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Event Registry Rest API'
+2022-04-23 21:16:05.990  INFO 80480 --- [RMI TCP Connection(4)-192.168.31.248] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMBP.lan-54364-1650719765847-0:1) is starting
+2022-04-23 21:16:05.997  INFO 80480 --- [RMI TCP Connection(4)-192.168.31.248] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMBP.lan-54364-1650719765847-0:1) started
+2022-04-23 21:16:05.997  INFO 80480 --- [RMI TCP Connection(4)-192.168.31.248] o.apache.activemq.broker.BrokerService   : For help or more information please see: http://activemq.apache.org
+2022-04-23 21:16:06.048  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 134 ms
+2022-04-23 21:16:06.049  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable DMN Rest API'
+2022-04-23 21:16:06.049  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable DMN Rest API'
+2022-04-23 21:16:06.050  INFO 80480 --- [RMI TCP Connection(4)-192.168.31.248] o.a.activemq.broker.TransportConnector   : Connector vm://localhost started
+2022-04-23 21:16:06.182  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 132 ms
+2022-04-23 21:16:06.184  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Content Rest API'
+2022-04-23 21:16:06.184  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Content Rest API'
+2022-04-23 21:16:06.271  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 87 ms
+2022-04-23 21:16:06.272  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable CMMN Rest API'
+2022-04-23 21:16:06.272  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable CMMN Rest API'
+2022-04-23 21:16:06.520  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 248 ms
+2022-04-23 21:16:06.523  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable App Rest API'
+2022-04-23 21:16:06.523  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable App Rest API'
+2022-04-23 21:16:06.591  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 68 ms
+2022-04-23 21:16:06.592  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable BPMN Rest API'
+2022-04-23 21:16:06.592  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable BPMN Rest API'
+2022-04-23 21:16:06.888  INFO 80480 --- [RMI TCP Connection(5)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 296 ms
+2022-04-23 21:30:44.116  INFO 80480 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMBP.lan-54364-1650719765847-0:1) is shutting down
+2022-04-23 21:30:44.129  INFO 80480 --- [ActiveMQ ShutdownHook] o.a.activemq.broker.TransportConnector   : Connector vm://localhost stopped
+2022-04-23 21:30:44.130  INFO 80480 --- [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory         : Encountered a JMSException - resetting the underlying JMS Connection
+
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1194) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1160) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_301]
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+
+2022-04-23 21:30:44.143  WARN 80480 --- [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory         : Could not close shared JMS Connection
+
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:501) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:389) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:205) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:367) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:721) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967) [activemq-client-5.15.14.jar:5.15.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_301]
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1194) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1160) ~[activemq-broker-5.15.14.jar:5.15.14]
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+
+2022-04-23 21:30:44.149  INFO 80480 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMBP.lan-54364-1650719765847-0:1) uptime 14 minutes
+2022-04-23 21:30:44.150  INFO 80480 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMBP.lan-54364-1650719765847-0:1) is shutdown
+2022-04-23 21:30:44.159  INFO 80480 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-04-23 21:30:44.161  WARN 80480 --- [SpringContextShutdownHook] liquibase.database.core.MySQLDatabase    : Failed to restore the auto commit to true
+2022-04-23 21:30:44.161  WARN 80480 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'close' on bean with name 'modelerLiquibase' threw an exception: liquibase.exception.DatabaseException: java.sql.SQLException: Connection is closed
+2022-04-23 21:30:44.162  WARN 80480 --- [SpringContextShutdownHook] liquibase.database.core.MySQLDatabase    : Failed to restore the auto commit to true
+2022-04-23 21:30:44.162  WARN 80480 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'close' on bean with name 'adminLiquibase' threw an exception: liquibase.exception.DatabaseException: java.sql.SQLException: Connection is closed
+2022-04-23 21:30:44.162  INFO 80480 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-04-23 21:30:44.167  INFO 80480 --- [SpringContextShutdownHook] o.f.j.s.i.a.AbstractAsyncExecutor        : Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 21:30:44.168  INFO 80480 --- [flowable-cmmn-acquire-timer-jobs] o.f.j.s.i.a.AcquireTimerJobsRunnable     : stopped async job due acquisition
+2022-04-23 21:30:44.168  INFO 80480 --- [flowable-cmmn-acquire-async-jobs] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : stopped async job due acquisition for engine cmmn
+2022-04-23 21:30:44.168  INFO 80480 --- [flowable-cmmn-reset-expired-jobs] o.f.j.s.i.a.ResetExpiredJobsRunnable     : stopped resetting expired jobs for engine cmmn
+2022-04-23 21:30:44.175  INFO 80480 --- [SpringContextShutdownHook] o.f.j.s.i.a.AbstractAsyncExecutor        : Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 21:30:44.176  INFO 80480 --- [flowable-bpmn-acquire-async-jobs] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : stopped async job due acquisition for engine bpmn
+2022-04-23 21:30:44.176  INFO 80480 --- [flowable-bpmn-acquire-timer-jobs] o.f.j.s.i.a.AcquireTimerJobsRunnable     : stopped async job due acquisition
+2022-04-23 21:30:44.176  INFO 80480 --- [flowable-bpmn-reset-expired-jobs] o.f.j.s.i.a.ResetExpiredJobsRunnable     : stopped resetting expired jobs for engine bpmn
+2022-04-23 21:30:44.179 DEBUG 80480 --- [SpringContextShutdownHook] i.p.e.E.clearAllProcessInstanceLockTimes : ==>  Preparing: update ACT_RU_EXECUTION set LOCK_TIME_ = null, LOCK_OWNER_ = null where LOCK_OWNER_ = ?
+2022-04-23 21:30:44.179 DEBUG 80480 --- [SpringContextShutdownHook] i.p.e.E.clearAllProcessInstanceLockTimes : ==> Parameters: 0ef7b6b3-aaab-47b9-afac-a109947751ba(String)
+2022-04-23 21:30:44.181 DEBUG 80480 --- [SpringContextShutdownHook] i.p.e.E.clearAllProcessInstanceLockTimes : <==    Updates: 0
+2022-04-23 21:30:44.184  INFO 80480 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-23 21:30:44.185  INFO 80480 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-23 21:30:44.188  INFO 80480 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-23 21:31:00.429  INFO 80749 --- [main] com.lyle.flowable.FlowableUiApplication  : Starting FlowableUiApplication on liyulongdeMBP.lan with PID 80749 (/Users/liyulong/IdeaProjects/flowable_ui/target/classes started by liyulong in /Users/liyulong/IdeaProjects/flowable_ui)
+2022-04-23 21:31:00.435  INFO 80749 --- [main] com.lyle.flowable.FlowableUiApplication  : No active profile set, falling back to default profiles: default
+2022-04-23 21:31:01.851  INFO 80749 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@240a2619' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 21:31:01.856  INFO 80749 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.flowable.ui.common.properties.FlowableRemoteIdmAutoConfiguration' of type [org.flowable.ui.common.properties.FlowableRemoteIdmAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 21:31:01.875  INFO 80749 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'flowable.common.app-org.flowable.ui.common.properties.FlowableCommonAppProperties' of type [org.flowable.ui.common.properties.FlowableCommonAppProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 21:31:01.876  INFO 80749 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'grantedAuthorityDefaults' of type [org.springframework.security.config.core.GrantedAuthorityDefaults] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 21:31:01.878  INFO 80749 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-23 21:31:02.063  INFO 80749 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-04-23 21:31:02.071  INFO 80749 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-23 21:31:02.071  INFO 80749 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-04-23 21:31:02.274  INFO 80749 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-23 21:31:02.275  INFO 80749 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1557 ms
+2022-04-23 21:31:02.645  INFO 80749 --- [main] o.f.s.b.ProcessEngineAutoConfiguration   : No deployment resources were found for autodeployment
+2022-04-23 21:31:02.669  INFO 80749 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-23 21:31:02.828  INFO 80749 --- [main] o.f.s.b.c.CmmnEngineAutoConfiguration    : No deployment resources were found for autodeployment
+2022-04-23 21:31:02.939  INFO 80749 --- [main] o.f.s.b.dmn.DmnEngineAutoConfiguration   : No deployment resources were found for autodeployment
+2022-04-23 21:31:02.980  INFO 80749 --- [main] o.f.s.b.f.FormEngineAutoConfiguration    : No deployment resources were found for autodeployment
+2022-04-23 21:31:03.013  INFO 80749 --- [main] o.f.s.b.e.EventRegistryAutoConfiguration : No deployment resources were found for autodeployment
+2022-04-23 21:31:03.091  INFO 80749 --- [main] o.f.s.b.app.AppEngineAutoConfiguration   : No deployment resources were found for autodeployment
+2022-04-23 21:31:03.120  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Found 7 Engine Configurators in total:
+2022-04-23 21:31:03.121  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2022-04-23 21:31:03.121  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2022-04-23 21:31:03.121  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2022-04-23 21:31:03.121  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2022-04-23 21:31:03.122  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2022-04-23 21:31:03.122  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2022-04-23 21:31:03.122  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2022-04-23 21:31:03.122  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2022-04-23 21:31:03.178  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2022-04-23 21:31:03.183  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2022-04-23 21:31:03.187  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2022-04-23 21:31:03.190  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2022-04-23 21:31:03.193  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2022-04-23 21:31:03.199  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2022-04-23 21:31:03.216  INFO 80749 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-23 21:31:03.380  INFO 80749 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-23 21:31:04.156  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2022-04-23 21:31:04.389  INFO 80749 --- [main] o.f.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2022-04-23 21:31:04.412 DEBUG 80749 --- [main] e.D.selectDeploymentCountByQueryCriteria : ==>  Preparing: select count(RES.ID_) from ACT_RE_DEPLOYMENT RES WHERE RES.ENGINE_VERSION_ = ?
+2022-04-23 21:31:04.418 DEBUG 80749 --- [main] e.D.selectDeploymentCountByQueryCriteria : ==> Parameters: v5(String)
+2022-04-23 21:31:04.424 DEBUG 80749 --- [main] e.D.selectDeploymentCountByQueryCriteria : <==      Total: 1
+2022-04-23 21:31:04.424  INFO 80749 --- [main] o.f.e.impl.cmd.ValidateV5EntitiesCmd     : Total of v5 deployments found: 0
+2022-04-23 21:31:04.428  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2022-04-23 21:31:05.186  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.FLW_EV_DATABASECHANGELOGLOCK
+2022-04-23 21:31:05.187  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.FLW_EV_DATABASECHANGELOGLOCK
+2022-04-23 21:31:05.188  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.FLW_EV_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:31:05.196  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:31:06.593  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.FLW_EV_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:31:06.595  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.FLW_EV_DATABASECHANGELOG
+2022-04-23 21:31:06.595  INFO 80749 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.FLW_EV_DATABASECHANGELOG
+2022-04-23 21:31:06.595  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.FLW_EV_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:31:06.613  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:31:06.614  INFO 80749 --- [main] o.f.e.impl.EventRegistryEngineImpl       : EventRegistryEngine default created
+2022-04-23 21:31:06.616  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2022-04-23 21:31:06.630  INFO 80749 --- [main] o.f.idm.engine.impl.IdmEngineImpl        : IdmEngine default created
+2022-04-23 21:31:06.631  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2022-04-23 21:31:06.662  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DMN_DATABASECHANGELOGLOCK
+2022-04-23 21:31:06.662  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DMN_DATABASECHANGELOGLOCK
+2022-04-23 21:31:06.663  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:31:06.664  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:31:06.699  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:31:06.699  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DMN_DATABASECHANGELOG
+2022-04-23 21:31:06.699  INFO 80749 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_DMN_DATABASECHANGELOG
+2022-04-23 21:31:06.699  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:31:06.710  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:31:06.710  INFO 80749 --- [main] o.f.dmn.engine.impl.DmnEngineImpl        : DmnEngine default created
+2022-04-23 21:31:06.711  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2022-04-23 21:31:06.727  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_FO_DATABASECHANGELOGLOCK
+2022-04-23 21:31:06.727  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_FO_DATABASECHANGELOGLOCK
+2022-04-23 21:31:06.728  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:31:06.729  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:31:06.753  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_FO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:31:06.754  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_FO_DATABASECHANGELOG
+2022-04-23 21:31:06.754  INFO 80749 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_FO_DATABASECHANGELOG
+2022-04-23 21:31:06.754  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:31:06.759  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:31:06.759  INFO 80749 --- [main] o.f.form.engine.impl.FormEngineImpl      : FormEngine default created
+2022-04-23 21:31:06.760  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2022-04-23 21:31:06.762  INFO 80749 --- [main] o.f.c.s.SpringContentEngineConfiguration : Content file system root : /Users/liyulong/IdeaProjects/flowable_ui/data
+2022-04-23 21:31:06.773  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CO_DATABASECHANGELOGLOCK
+2022-04-23 21:31:06.774  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CO_DATABASECHANGELOGLOCK
+2022-04-23 21:31:06.774  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:31:06.775  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:31:06.798  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:31:06.799  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CO_DATABASECHANGELOG
+2022-04-23 21:31:06.799  INFO 80749 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_CO_DATABASECHANGELOG
+2022-04-23 21:31:06.799  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:31:06.804  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:31:06.804  INFO 80749 --- [main] o.f.c.engine.impl.ContentEngineImpl      : ContentEngine default created
+2022-04-23 21:31:06.805  INFO 80749 --- [main] o.f.a.s.SpringAppEngineConfiguration     : Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2022-04-23 21:31:06.918  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOGLOCK
+2022-04-23 21:31:06.919  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOGLOCK
+2022-04-23 21:31:06.920  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:31:06.924  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:31:06.976  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:31:06.976  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOG
+2022-04-23 21:31:06.977  INFO 80749 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_CMMN_DATABASECHANGELOG
+2022-04-23 21:31:06.977  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:31:07.029  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:31:07.030  INFO 80749 --- [main] o.f.cmmn.engine.impl.CmmnEngineImpl      : CmmnEngine default created
+2022-04-23 21:31:07.056  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_APP_DATABASECHANGELOGLOCK
+2022-04-23 21:31:07.057  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_APP_DATABASECHANGELOGLOCK
+2022-04-23 21:31:07.057  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_APP_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:31:07.059  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:31:07.099  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_APP_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:31:07.100  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_APP_DATABASECHANGELOG
+2022-04-23 21:31:07.101  INFO 80749 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_APP_DATABASECHANGELOG
+2022-04-23 21:31:07.102  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_APP_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:31:07.110  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:31:07.111  INFO 80749 --- [main] o.f.app.engine.impl.AppEngineImpl        : AppEngine default created
+2022-04-23 21:31:07.282  INFO 80749 --- [main] o.f.u.m.c.ModelerDatabaseConfiguration   : database product name: 'MySQL'
+2022-04-23 21:31:07.282  INFO 80749 --- [main] o.f.u.m.c.ModelerDatabaseConfiguration   : using database type: mysql
+2022-04-23 21:31:07.735  INFO 80749 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-04-23 21:31:07.800  INFO 80749 --- [main] o.s.l.c.support.AbstractContextSource    : Property 'userDn' not set - anonymous context will be used for read-write operations
+2022-04-23 21:31:07.845  INFO 80749 --- [main] u.c.s.CustomPersistentRememberMeServices : Cookie max-age set to 2678400 seconds
+2022-04-23 21:31:07.845  INFO 80749 --- [main] u.c.s.CustomPersistentRememberMeServices : Cookie refresh age set to 86400 seconds
+2022-04-23 21:31:07.890  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_ADM_DATABASECHANGELOGLOCK
+2022-04-23 21:31:07.891  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_ADM_DATABASECHANGELOGLOCK
+2022-04-23 21:31:07.891  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_ADM_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:31:07.892  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:31:07.912  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_ADM_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:31:07.912  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_ADM_DATABASECHANGELOG
+2022-04-23 21:31:07.912  INFO 80749 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_ADM_DATABASECHANGELOG
+2022-04-23 21:31:07.912  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_ADM_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:31:07.914  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:31:08.096  INFO 80749 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/idm/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@680aa303, org.springframework.security.web.context.SecurityContextPersistenceFilter@629e9957, org.springframework.security.web.header.HeaderWriterFilter@3396d2a6, org.springframework.security.web.authentication.logout.LogoutFilter@5ec2462, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5e744b4b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75952723, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ea01c2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60319a00, org.springframework.security.web.session.SessionManagementFilter@23216e17, org.springframework.security.web.access.ExceptionTranslationFilter@45bf1ee3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8dbe78f]
+2022-04-23 21:31:08.097  INFO 80749 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*-api/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35b799c0, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a8b10dd, org.springframework.security.web.header.HeaderWriterFilter@25eadfe6, org.springframework.security.web.authentication.logout.LogoutFilter@40a923e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3a6732bc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a96081a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29f0e941, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3963d003, org.springframework.security.web.session.SessionManagementFilter@3ac23fe7, org.springframework.security.web.access.ExceptionTranslationFilter@3aef4650, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39d8240b]
+2022-04-23 21:31:08.099  INFO 80749 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/editor/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46916d68, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ae729fb, org.springframework.security.web.header.HeaderWriterFilter@6048e171, org.springframework.security.web.authentication.logout.LogoutFilter@72238cf0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@12620e98, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5513982, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22351330, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79b07ccd, org.springframework.security.web.session.SessionManagementFilter@75eed00f, org.springframework.security.web.access.ExceptionTranslationFilter@39badc71, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d8fcde8]
+2022-04-23 21:31:08.101  INFO 80749 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.flowable.ui.common.security.ActuatorRequestMatcher@3669d7ac, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@506d7831, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f19da2c, org.springframework.security.web.header.HeaderWriterFilter@73c337e9, org.springframework.security.web.authentication.logout.LogoutFilter@618cfd1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@460818c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f62fa28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15f4f652, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@497746ea, org.springframework.security.web.session.SessionManagementFilter@129204bf, org.springframework.security.web.access.ExceptionTranslationFilter@5e1fc897, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c7caff1]
+2022-04-23 21:31:08.112  INFO 80749 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ea4e0f3, org.springframework.security.web.context.SecurityContextPersistenceFilter@72ce2982, org.springframework.security.web.header.HeaderWriterFilter@5c00b341, org.springframework.security.web.authentication.logout.LogoutFilter@2b9132ad, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72a80415, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d5399f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1490b1a4, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6b50017c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c9ecd9e, org.springframework.security.web.session.SessionManagementFilter@10658b31, org.springframework.security.web.access.ExceptionTranslationFilter@636787fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7aa1e86b]
+2022-04-23 21:31:08.118  INFO 80749 --- [main] o.f.u.m.c.ModelerDatabaseConfiguration   : Configuring Liquibase
+2022-04-23 21:31:08.128  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DE_DATABASECHANGELOGLOCK
+2022-04-23 21:31:08.129  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DE_DATABASECHANGELOGLOCK
+2022-04-23 21:31:08.129  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM flowable_modeler.ACT_DE_DATABASECHANGELOGLOCK WHERE ID=1
+2022-04-23 21:31:08.130  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2022-04-23 21:31:08.154  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM flowable_modeler.ACT_DE_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-04-23 21:31:08.154  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM flowable_modeler.ACT_DE_DATABASECHANGELOG
+2022-04-23 21:31:08.155  INFO 80749 --- [main] l.c.StandardChangeLogHistoryService      : Reading from flowable_modeler.ACT_DE_DATABASECHANGELOG
+2022-04-23 21:31:08.155  INFO 80749 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM flowable_modeler.ACT_DE_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-04-23 21:31:08.159  INFO 80749 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2022-04-23 21:31:08.521  INFO 80749 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-04-23 21:31:08.534  INFO 80749 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-04-23 21:31:08.603  INFO 80749 --- [main] o.f.j.s.i.a.AbstractAsyncExecutor        : Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 21:31:08.603  INFO 80749 --- [Thread-18] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : starting to acquire async jobs due
+2022-04-23 21:31:08.608  INFO 80749 --- [Thread-19] o.f.j.s.i.a.AcquireTimerJobsRunnable     : starting to acquire async jobs due
+2022-04-23 21:31:08.608  INFO 80749 --- [Thread-20] o.f.j.s.i.a.ResetExpiredJobsRunnable     : starting to reset expired jobs for engine cmmn
+2022-04-23 21:31:08.608  INFO 80749 --- [main] o.f.j.s.i.a.AbstractAsyncExecutor        : Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 21:31:08.608  INFO 80749 --- [Thread-21] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : starting to acquire async jobs due
+2022-04-23 21:31:08.611  INFO 80749 --- [Thread-22] o.f.j.s.i.a.AcquireTimerJobsRunnable     : starting to acquire async jobs due
+2022-04-23 21:31:08.611  INFO 80749 --- [Thread-23] o.f.j.s.i.a.ResetExpiredJobsRunnable     : starting to reset expired jobs for engine bpmn
+2022-04-23 21:31:08.631  INFO 80749 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable IDM App Servlet'
+2022-04-23 21:31:08.631  INFO 80749 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable IDM App Servlet'
+2022-04-23 21:31:08.695  INFO 80749 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 64 ms
+2022-04-23 21:31:08.695  INFO 80749 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Admin App'
+2022-04-23 21:31:08.696  INFO 80749 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Admin App'
+2022-04-23 21:31:08.897  INFO 80749 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 201 ms
+2022-04-23 21:31:08.898  INFO 80749 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Modeler App Servlet'
+2022-04-23 21:31:08.898  INFO 80749 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Modeler App Servlet'
+2022-04-23 21:31:08.996  INFO 80749 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 98 ms
+2022-04-23 21:31:08.996  INFO 80749 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Modeler App API Servlet'
+2022-04-23 21:31:08.996  INFO 80749 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Modeler App API Servlet'
+2022-04-23 21:31:09.030  INFO 80749 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2022-04-23 21:31:09.030  INFO 80749 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable IDM App API Servlet'
+2022-04-23 21:31:09.030  INFO 80749 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable IDM App API Servlet'
+2022-04-23 21:31:09.065  INFO 80749 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2022-04-23 21:31:09.068  INFO 80749 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-04-23 21:31:09.102 DEBUG 80749 --- [main] i.p.e.D.selectDeploymentsByQueryCriteria : ==>  Preparing: select RES.* from ACT_RE_DEPLOYMENT RES order by RES.DEPLOY_TIME_ asc
+2022-04-23 21:31:09.102 DEBUG 80749 --- [main] i.p.e.D.selectDeploymentsByQueryCriteria : ==> Parameters: 
+2022-04-23 21:31:09.103 DEBUG 80749 --- [main] i.p.e.D.selectDeploymentsByQueryCriteria : <==      Total: 0
+2022-04-23 21:31:09.103  INFO 80749 --- [main] o.f.ui.task.conf.TaskBootstrapper        : Migrated 0 app deployments
+2022-04-23 21:31:09.105  INFO 80749 --- [main] o.f.u.a.d.g.MinimalDataGenerator         : Verifying if minimal data is present
+2022-04-23 21:31:09.115  INFO 80749 --- [main] com.lyle.flowable.FlowableUiApplication  : Started FlowableUiApplication in 9.327 seconds (JVM running for 10.074)
+2022-04-23 21:31:09.384  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-23 21:31:09.385  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-23 21:31:09.389  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-04-23 21:31:09.447  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Form Rest API'
+2022-04-23 21:31:09.447  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Form Rest API'
+2022-04-23 21:31:09.492  INFO 80749 --- [JMX connector] o.a.a.broker.jmx.ManagementContext       : JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2022-04-23 21:31:09.493  INFO 80749 --- [RMI TCP Connection(2)-192.168.31.248] o.apache.activemq.broker.BrokerService   : Using Persistence Adapter: MemoryPersistenceAdapter
+2022-04-23 21:31:09.553  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 106 ms
+2022-04-23 21:31:09.554  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Event Registry Rest API'
+2022-04-23 21:31:09.554  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Event Registry Rest API'
+2022-04-23 21:31:09.643  INFO 80749 --- [RMI TCP Connection(2)-192.168.31.248] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMBP.lan-58145-1650720669498-0:1) is starting
+2022-04-23 21:31:09.655  INFO 80749 --- [RMI TCP Connection(2)-192.168.31.248] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMBP.lan-58145-1650720669498-0:1) started
+2022-04-23 21:31:09.655  INFO 80749 --- [RMI TCP Connection(2)-192.168.31.248] o.apache.activemq.broker.BrokerService   : For help or more information please see: http://activemq.apache.org
+2022-04-23 21:31:09.658  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 104 ms
+2022-04-23 21:31:09.660  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable DMN Rest API'
+2022-04-23 21:31:09.661  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable DMN Rest API'
+2022-04-23 21:31:09.717  INFO 80749 --- [RMI TCP Connection(2)-192.168.31.248] o.a.activemq.broker.TransportConnector   : Connector vm://localhost started
+2022-04-23 21:31:09.787  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 126 ms
+2022-04-23 21:31:09.788  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable Content Rest API'
+2022-04-23 21:31:09.789  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable Content Rest API'
+2022-04-23 21:31:09.849  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 60 ms
+2022-04-23 21:31:09.851  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable CMMN Rest API'
+2022-04-23 21:31:09.851  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable CMMN Rest API'
+2022-04-23 21:31:10.091  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 240 ms
+2022-04-23 21:31:10.092  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable App Rest API'
+2022-04-23 21:31:10.093  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable App Rest API'
+2022-04-23 21:31:10.148  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 55 ms
+2022-04-23 21:31:10.149  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'Flowable BPMN Rest API'
+2022-04-23 21:31:10.149  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'Flowable BPMN Rest API'
+2022-04-23 21:31:10.397  INFO 80749 --- [RMI TCP Connection(3)-192.168.31.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 248 ms
+2022-04-23 21:36:16.591  INFO 80749 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMBP.lan-58145-1650720669498-0:1) is shutting down
+2022-04-23 21:36:16.602  INFO 80749 --- [ActiveMQ ShutdownHook] o.a.activemq.broker.TransportConnector   : Connector vm://localhost stopped
+2022-04-23 21:36:16.603  INFO 80749 --- [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory         : Encountered a JMSException - resetting the underlying JMS Connection
+
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1194) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1160) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_301]
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+
+2022-04-23 21:36:16.612  WARN 80749 --- [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory         : Could not close shared JMS Connection
+
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:501) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:389) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:205) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:367) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:721) [spring-jms-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967) [activemq-client-5.15.14.jar:5.15.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_301]
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132) ~[activemq-client-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1194) ~[activemq-broker-5.15.14.jar:5.15.14]
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1160) ~[activemq-broker-5.15.14.jar:5.15.14]
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+
+2022-04-23 21:36:16.618  INFO 80749 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMBP.lan-58145-1650720669498-0:1) uptime 5 minutes
+2022-04-23 21:36:16.619  INFO 80749 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.14 (localhost, ID:liyulongdeMBP.lan-58145-1650720669498-0:1) is shutdown
+2022-04-23 21:36:16.628  INFO 80749 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-04-23 21:36:16.632  WARN 80749 --- [SpringContextShutdownHook] liquibase.database.core.MySQLDatabase    : Failed to restore the auto commit to true
+2022-04-23 21:36:16.633  WARN 80749 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'close' on bean with name 'modelerLiquibase' threw an exception: liquibase.exception.DatabaseException: java.sql.SQLException: Connection is closed
+2022-04-23 21:36:16.633  WARN 80749 --- [SpringContextShutdownHook] liquibase.database.core.MySQLDatabase    : Failed to restore the auto commit to true
+2022-04-23 21:36:16.634  WARN 80749 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'close' on bean with name 'adminLiquibase' threw an exception: liquibase.exception.DatabaseException: java.sql.SQLException: Connection is closed
+2022-04-23 21:36:16.634  INFO 80749 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-04-23 21:36:16.638  INFO 80749 --- [SpringContextShutdownHook] o.f.j.s.i.a.AbstractAsyncExecutor        : Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 21:36:16.638  INFO 80749 --- [flowable-cmmn-acquire-timer-jobs] o.f.j.s.i.a.AcquireTimerJobsRunnable     : stopped async job due acquisition
+2022-04-23 21:36:16.638  INFO 80749 --- [flowable-cmmn-reset-expired-jobs] o.f.j.s.i.a.ResetExpiredJobsRunnable     : stopped resetting expired jobs for engine cmmn
+2022-04-23 21:36:16.638  INFO 80749 --- [flowable-cmmn-acquire-async-jobs] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : stopped async job due acquisition for engine cmmn
+2022-04-23 21:36:16.644  INFO 80749 --- [SpringContextShutdownHook] o.f.j.s.i.a.AbstractAsyncExecutor        : Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+2022-04-23 21:36:16.644  INFO 80749 --- [flowable-bpmn-acquire-async-jobs] o.f.j.s.i.a.AcquireAsyncJobsDueRunnable  : stopped async job due acquisition for engine bpmn
+2022-04-23 21:36:16.644  INFO 80749 --- [flowable-bpmn-reset-expired-jobs] o.f.j.s.i.a.ResetExpiredJobsRunnable     : stopped resetting expired jobs for engine bpmn
+2022-04-23 21:36:16.644  INFO 80749 --- [flowable-bpmn-acquire-timer-jobs] o.f.j.s.i.a.AcquireTimerJobsRunnable     : stopped async job due acquisition
+2022-04-23 21:36:16.646 DEBUG 80749 --- [SpringContextShutdownHook] i.p.e.E.clearAllProcessInstanceLockTimes : ==>  Preparing: update ACT_RU_EXECUTION set LOCK_TIME_ = null, LOCK_OWNER_ = null where LOCK_OWNER_ = ?
+2022-04-23 21:36:16.647 DEBUG 80749 --- [SpringContextShutdownHook] i.p.e.E.clearAllProcessInstanceLockTimes : ==> Parameters: 686295aa-89c4-4809-81f3-1de1798b982d(String)
+2022-04-23 21:36:16.648 DEBUG 80749 --- [SpringContextShutdownHook] i.p.e.E.clearAllProcessInstanceLockTimes : <==    Updates: 0
+2022-04-23 21:36:16.651  INFO 80749 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-23 21:36:16.652  INFO 80749 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-23 21:36:16.655  INFO 80749 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
